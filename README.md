@@ -1,5 +1,5 @@
-listserver
-==========
+Server List Website
+===================
 
 PHP website with mySQL backend that will allow users to view servers. Server owners create their own listings, and can
 buy advertising or higher rank on the server.
@@ -7,7 +7,7 @@ buy advertising or higher rank on the server.
 Site will need to be searchable by different fields, but with static searches (which can be cached).
 
 Needed:
-=======
+-------
 index.php file will be static search of most popular servers, with paid listings at the top.
 config.php file with configurable variables (db name, username, password, table, etc)
 search.php that contains the search functions
@@ -19,7 +19,7 @@ list-style.css for styling the pages
 various search pages
 
 Database structure:
-===================
+-------------------
 table:  servers
 fields: server_id (primary key)
         server_name
