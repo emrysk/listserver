@@ -5,9 +5,11 @@
     Description:
         Purpose of the stylesheet follows.
 */
+
+
 * {
     box-sizing: border-box;
-}
+} 
 
 body 
     {
@@ -16,46 +18,127 @@ body
     font-size: 80%;
 }
 
-a:link,a:visited,a:active{color:#333333;text-decoration:underline}
+a:link,a:visited,a:active{color:white;text-decoration:none}
 a:hover{color:#D46400}
 
 .titlebar {
-    background-color: #006E04;
+    background-color: #002F2F;
     width: 100%;
-    height: 50px;
-    box-shadow: 0px 2px 5px 1px gray;
+    height: 35px;
     color: white;
-    margin-bottom: 50px;
+    padding: 5px;
     opacity: .9;
+    padding-left: 25px;
 }
 
-.pagecon {
-    width: 1000px;
-    margin: 0 auto;
-    position: relative;
+.headerbar {
+    width: 100%;
+    height: 100px;
+    color: white;
+    background-image: url('header.png');
+    padding-left: 25px;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 5px 2px #787F6A;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 250%;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 0px 2px black;
 }
 
-.button, .container {
-    background-color: #F2F2F2;
+/* Sets common style elements for buttons and containers */
+.container, .SideBar, .premium {
+    background-color: #E8E7DD;
     border-radius: 10px;
-    margin-bottom: 25px;
-    box-shadow: 0px 2px 5px 1px gray;
+    box-shadow: 0px 2px 5px 1px #787F6A;
     padding: 10px;
 }
 
+/* Sets style elements for buttons */
 .button {
-    width: 100px;
-    font-size: 150%;
-    background-color: #006E04;
+    float: left;
+    width: 50px;
+    font-size: 130%;
+    background: transparent;
     color: white;
     text-align: center;
-    float: right;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
-
+/* Sets style elements for content container */
 .container {
     float: left;
-    width: 1000px;
+    width: calc(90% - 165px);
+    margin-bottom: 25px;
+    margin-left: 25px;
 }
+
+/* Sets style elements for SideBar */
+.SideBar {
+    float: left;
+    width: 140px;
+    margin-bottom: 25px;
+    margin-right: 25px;    
+    margin-left: 25px;
+}
+
+.premium {
+    float: left;
+    width: 90%;
+    height: 300px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+img {
+    box-shadow: 0px 2px 5px 1px #787F6A;
+}
+
+h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+
+.tablehead {
+    border: 0;
+    background: #809797; /* Old browsers */
+background: -moz-linear-gradient(top,  #809797 0%, #002f2f 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#809797), color-stop(100%,#002f2f)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #809797 0%,#002f2f 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #809797 0%,#002f2f 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #809797 0%,#002f2f 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #809797 0%,#002f2f 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#809797', endColorstr='#002f2f',GradientType=0 ); /* IE6-9 */
+
+}
+
+.topColumn {
+    width: 100%;
+    height: 20px;
+    padding: 5px;
+}
+
+.ListingRow {
+    width: 50%;
+    height: 70px;
+    padding: 5px;
+    background-color: #B3C1C1;
+}
+
+.trDivider{height: 2px; background-color: gray;}
 
 .con{width:200px; top:0;bottom:0;left:0; position:absolute;background:#ff0;}
 
