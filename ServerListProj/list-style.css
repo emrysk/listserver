@@ -40,7 +40,7 @@ a:hover{color:#D46400}
     margin-bottom: 50px;
     box-shadow: 0px 2px 5px 2px #787F6A;
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 250%;
+    font-size: 500%;
     font-weight: 800;
     letter-spacing: 2px;
     text-shadow: 0px 2px black;
@@ -89,7 +89,6 @@ a:hover{color:#D46400}
 .premium {
     float: left;
     width: 90%;
-    height: 300px;
     margin-bottom: 25px;
     margin-left: 25px;
 }
