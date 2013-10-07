@@ -27,12 +27,15 @@ fields: server_id (primary key)
         owner_id (foreign key)
         server_desc
   
-table:  owners
-fields: owner_id (primary key)
+table:  users
+fields: user_id (primary key)
         username (Unique key)
         email_address (unique key)
         first_name
         last_name
+        activate
+        key
+        ban
 
 table:  comments
 fields: comment_id (primary key)
