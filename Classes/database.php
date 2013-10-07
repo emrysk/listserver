@@ -14,7 +14,7 @@
 
 include("config.php");
 
-class database {
+class MySQL {
        var $connection;         //The MySQL database connection
        
        //Class Constructor
@@ -23,5 +23,8 @@ class database {
        mysqli_select_db(DB_NAME, $this->connection) or die(mysqli_error());
        }
 }
+
+
+$database = new MySQL;
 
 ?>
