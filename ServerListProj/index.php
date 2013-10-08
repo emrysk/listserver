@@ -1,11 +1,17 @@
-<!-- 
-Document   : index
+<!-- php
+Document   : index.php
 Created on : Sep 24, 2013, 3:05:51 PM
-Author     : Owner
-Description:
-Purpose of the stylesheet follows.
+Author     : EmrysK
 -->
 <!DOCTYPE html>
+<?php 
+
+session_start();
+
+include "Classes/config.php";
+include "Classes/database.php";
+
+?>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -19,7 +25,17 @@ Purpose of the stylesheet follows.
                 <div class="button"> <a href="">Link</a> </div>
                 <div class="button"> <a href="">Link</a> </div> 
                 <div class="button"> <a href="">Link</a> </div>
-                <div class="loginbtn"> <a href="">Login</a> </div>
+                
+                <?php 
+                if (!empty($_SESSION['user']) && !empty($_SESSION['userid'])) 
+                {
+                    $account = "<div class='loginbtn'><a href=account.php>" . $_SESSION['user'] ."</a></div>";
+                    echo $account;
+                }
+                else {
+                    echo "<div class='loginbtn'><a href=http://ccstaff.net/login.php>Login</a></div>";
+                }
+                ?>
             </div> 
         </div>
         

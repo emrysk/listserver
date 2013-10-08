@@ -21,6 +21,30 @@ body
 a:link,a:visited,a:active{color:white;text-decoration:none}
 a:hover{color:#D46400}
 
+div {padding: 5px;}
+
+.floatleft {float: left;}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+img {
+    box-shadow: 0px 2px 5px 1px #787F6A;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+
 .titlebar {
     background-color: #002F2F;
     width: 100%;
@@ -29,6 +53,7 @@ a:hover{color:#D46400}
     padding: 5px;
     opacity: .9;
     padding-left: 25px;
+    padding-right: 35px;
 }
 
 .headerbar {
@@ -69,10 +94,26 @@ a:hover{color:#D46400}
     margin-left: 4px;
     margin-right: 4px;
 }
+
+.loginbtn {
+    float: right;
+    min-width: 50px;
+    font-size: 130%;
+    background: transparent;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
 /* Sets style elements for content container */
 .container {
     float: left;
-    width: calc(90% - 165px);
+    width: calc(90% - 345px);
     margin-bottom: 25px;
     margin-left: 25px;
 }
@@ -80,7 +121,7 @@ a:hover{color:#D46400}
 /* Sets style elements for SideBar */
 .SideBar {
     float: left;
-    width: 140px;
+    width: 320px;
     margin-bottom: 25px;
     margin-right: 25px;    
     margin-left: 25px;
@@ -91,24 +132,6 @@ a:hover{color:#D46400}
     width: 90%;
     margin-bottom: 25px;
     margin-left: 25px;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-    text-align: left;
-}
-
-img {
-    box-shadow: 0px 2px 5px 1px #787F6A;
-}
-
-h1 {
-    font-family: "Arial Black", Gadget, sans-serif;
-    color: white;
-    font-weight: 600;
-    letter-spacing: 2px;
-    margin: 0px;
 }
 
 .tablehead {
@@ -126,18 +149,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#809797', end
 
 .topColumn {
     width: 100%;
-    height: 20px;
+    height: auto;
     padding: 5px;
 }
 
 .ListingRow {
-    width: 50%;
-    height: 70px;
+    float: left;
+    width: 100%;
+    height: auto;
     padding: 5px;
     background-color: #B3C1C1;
 }
 
-.trDivider{height: 2px; background-color: gray;}
+.Divider{float: left; height: 2px; width: 100%; background-color: gray; padding: 0px; margin: 0px;}
 
 .con{width:200px; top:0;bottom:0;left:0; position:absolute;background:#ff0;}
 

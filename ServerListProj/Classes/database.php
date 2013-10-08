@@ -19,8 +19,14 @@ class MySQL {
        
        //Class Constructor
        function dbconnect(){
-       $this->connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS) or die(mysqli_error());
-       mysqli_select_db(DB_NAME, $this->connection) or die(mysqli_error());
+        $this->connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS) or die(mysqli_error());
+        mysqli_select_db(DB_NAME, $this->connection) or die(mysqli_error());
+       }
+       
+       function form($data) {
+        $data = preg_replace("[\'\")(;|`,&lt;&gt;]", "", $data);
+        $data = mysqli_real_escape_string(trim($data));
+        return stripslashes($data);    
        }
 }
 
